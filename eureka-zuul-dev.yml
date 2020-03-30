@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    api-a:
+      path: /elk/**
+      serviceId: eureka-elk
+    api-b:
+      path: /feign/**
+      serviceId: eureka-feign
+    api-c:
+      path: /hi/**
+      serviceId: eureka-hi
